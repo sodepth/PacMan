@@ -159,84 +159,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Apple.cpp" />
-    <ClCompile Include="Game.cpp">
-      <AssemblerOutput>NoListing</AssemblerOutput>
-      <AssemblerListingLocation>C:\XYZcourse\CPP\SourceCode\PacMan\PacMan\\x64\Release\</AssemblerListingLocation>
-      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
-      <BrowseInformation>false</BrowseInformation>
-      <BrowseInformationFile>C:\XYZcourse\CPP\SourceCode\PacMan\PacMan\\x64\Release\</BrowseInformationFile>
-      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
-      <CompileAs>Default</CompileAs>
-      <UseDynamicDebugging>false</UseDynamicDebugging>
-      <ConformanceMode>true</ConformanceMode>
-      <DiagnosticsFormat>Column</DiagnosticsFormat>
-      <DisableLanguageExtensions>false</DisableLanguageExtensions>
-      <ErrorReporting>Prompt</ErrorReporting>
-      <ExpandAttributedSource>false</ExpandAttributedSource>
-      <ExceptionHandling>Sync</ExceptionHandling>
-      <EnableASAN>false</EnableASAN>
-      <EnableFuzzer>false</EnableFuzzer>
-      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
-      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
-      <EnableVectorLength>NotSet</EnableVectorLength>
-      <FloatingPointModel>Precise</FloatingPointModel>
-      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
-      <GenerateModuleDependencies>false</GenerateModuleDependencies>
-      <GenerateSourceDependencies>false</GenerateSourceDependencies>
-      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
-      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
-      <LanguageStandard>Default</LanguageStandard>
-      <LanguageStandard_C>Default</LanguageStandard_C>
-      <MinimalRebuild>false</MinimalRebuild>
-      <ModuleDependenciesFile>C:\XYZcourse\CPP\SourceCode\PacMan\PacMan\\x64\Release\</ModuleDependenciesFile>
-      <ModuleOutputFile>C:\XYZcourse\CPP\SourceCode\PacMan\PacMan\\x64\Release\</ModuleOutputFile>
-      <OmitDefaultLibName>false</OmitDefaultLibName>
-      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
-      <WholeProgramOptimization>true</WholeProgramOptimization>
-      <Optimization>MaxSpeed</Optimization>
-      <ObjectFileName>C:\XYZcourse\CPP\SourceCode\PacMan\PacMan\\x64\Release\</ObjectFileName>
-      <CallingConvention>Cdecl</CallingConvention>
-      <ProgramDataBaseFileName>C:\XYZcourse\CPP\SourceCode\PacMan\PacMan\\x64\Release\vc143.pdb</ProgramDataBaseFileName>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>C:\XYZcourse\CPP\SourceCode\PacMan\PacMan\\x64\Release\PacMan.pch</PrecompiledHeaderOutputFile>
-      <PreprocessToFile>false</PreprocessToFile>
-      <PreprocessKeepComments>false</PreprocessKeepComments>
-      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
-      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
-      <RuntimeLibrary>MultiThreadedDll</RuntimeLibrary>
-      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
-      <ShowIncludes>false</ShowIncludes>
-      <SourceDependenciesFile>C:\XYZcourse\CPP\SourceCode\PacMan\PacMan\\x64\Release\</SourceDependenciesFile>
-      <SuppressStartupBanner>true</SuppressStartupBanner>
-      <BufferSecurityCheck>true</BufferSecurityCheck>
-      <SmallerTypeCheck>false</SmallerTypeCheck>
-      <SpectreMitigation>false</SpectreMitigation>
-      <StructMemberAlignment>Default</StructMemberAlignment>
-      <SupportJustMyCode>false</SupportJustMyCode>
-      <TrackerLogDirectory>C:\XYZcourse\CPP\SourceCode\PacMan\PacMan\\x64\Release\PacMan.tlog\</TrackerLogDirectory>
-      <TranslateIncludes>false</TranslateIncludes>
-      <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
-      <TreatWarningAsError>false</TreatWarningAsError>
-      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
-      <UseFullPaths>true</UseFullPaths>
-      <WarningLevel>Level3</WarningLevel>
-      <XMLDocumentationFileName>C:\XYZcourse\CPP\SourceCode\PacMan\PacMan\\x64\Release\</XMLDocumentationFileName>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <IntelJCCErratum>false</IntelJCCErratum>
-      <BuildStlModules>false</BuildStlModules>
-      <TreatAngleIncludeAsExternal>false</TreatAngleIncludeAsExternal>
-      <ExternalWarningLevel>InheritWarningLevel</ExternalWarningLevel>
-      <TreatExternalTemplatesAsInternal>true</TreatExternalTemplatesAsInternal>
-      <DisableAnalyzeExternal>false</DisableAnalyzeExternal>
-      <PreprocessorDefinitions>SFML_STATIC;NDEBUG;_CONSOLE;_UNICODE;UNICODE;</PreprocessorDefinitions>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\XYZcourse\CPP\SourceCode\PacMan\\SFML\SFML-2.5.1\include;</AdditionalIncludeDirectories>
-      <LinkCompiled>true</LinkCompiled>
-    </ClCompile>
+    <ClCompile Include="Game.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Math.cpp" />
     <ClCompile Include="Player.cpp" />
@@ -246,13 +169,37 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Headers\Apple.h" />
-    <ClInclude Include="Headers\Parameters.h" />
     <ClInclude Include="Headers\Game.h" />
     <ClInclude Include="Headers\Math.h" />
+    <ClInclude Include="Headers\Parameters.h" />
     <ClInclude Include="Headers\Player.h" />
+    <ClInclude Include="Headers\Sounds.h" />
     <ClInclude Include="Headers\Spike.h" />
     <ClInclude Include="Headers\UI.h" />
-    <ClInclude Include="Sounds.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Fonts\minecraft.ttf" />
+    <Content Include="Resources\Fonts\Roboto-Black.ttf" />
+    <Content Include="Resources\Fonts\Roboto-BlackItalic.ttf" />
+    <Content Include="Resources\Fonts\Roboto-Bold.ttf" />
+    <Content Include="Resources\Fonts\Roboto-BoldItalic.ttf" />
+    <Content Include="Resources\Fonts\Roboto-Italic.ttf" />
+    <Content Include="Resources\Fonts\Roboto-Light.ttf" />
+    <Content Include="Resources\Fonts\Roboto-LightItalic.ttf" />
+    <Content Include="Resources\Fonts\Roboto-Medium.ttf" />
+    <Content Include="Resources\Fonts\Roboto-MediumItalic.ttf" />
+    <Content Include="Resources\Fonts\Roboto-Regular.ttf" />
+    <Content Include="Resources\Fonts\Roboto-Thin.ttf" />
+    <Content Include="Resources\Fonts\Roboto-ThinItalic.ttf" />
+    <Content Include="Resources\Images\apple.png" />
+    <Content Include="Resources\Images\player.png" />
+    <Content Include="Resources\Images\spike.png" />
+    <Content Include="Resources\Shaders\background.frag" />
+    <Content Include="Resources\Shaders\blur.frag" />
+    <Content Include="Resources\Shaders\rainbow.frag" />
+    <Content Include="Resources\Sounds\Eat.wav" />
+    <Content Include="Resources\Sounds\Lose.wav" />
+    <Content Include="Resources\Sounds\Win.wav" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

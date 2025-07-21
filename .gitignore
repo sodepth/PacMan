@@ -34,5 +34,9 @@
 SFML/
 SFMLTemplate/
 .idea/
+.vs/
 x64/
 PacMan/x64/
+
+NewProject.bat
+new_project.ps1
