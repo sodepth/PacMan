@@ -3,7 +3,7 @@
 > [!CAUTION]
 > To work, you need to download [SFML](https://www.sfml-dev.org/download/sfml/2.5.0/) version 2.5.x or higher!!!
 
-<img src="https://raw.githubusercontent.com/sodepth/PacMan/main/Assets/Anim.gif"/>
+<img src="https://raw.githubusercontent.com/sodepth/PacMan/main/Assets/Gif.gif"/>
 
 <div align="center"><table><tr>Screenshots</tr>
 <tr><td>
