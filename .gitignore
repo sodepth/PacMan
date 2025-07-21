@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+SFML/
+SFMLTemplate/
+.idea/
+x64/
+PacMan/x64/
