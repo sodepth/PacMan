@@ -8,6 +8,7 @@
 #include "Apple.h"
 #include "Spike.h"
 #include "Sounds.h"
+#include "Headers/Leaderboard.h"
 
 namespace PacMan
 {
@@ -26,7 +27,8 @@ namespace PacMan
     struct Game {
         // Константы
         Parameters parameters;
-        
+        // Таблица рекордов
+        std::vector<Record> playersScoreData;
         // Звуки
         Sounds sounds;
         

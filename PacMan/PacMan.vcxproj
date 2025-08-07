@@ -160,6 +160,7 @@
   <ItemGroup>
     <ClCompile Include="Apple.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Leaderboard.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Math.cpp" />
     <ClCompile Include="Player.cpp" />
@@ -170,6 +171,7 @@
   <ItemGroup>
     <ClInclude Include="Headers\Apple.h" />
     <ClInclude Include="Headers\Game.h" />
+    <ClInclude Include="Headers\Leaderboard.h" />
     <ClInclude Include="Headers\Math.h" />
     <ClInclude Include="Headers\Parameters.h" />
     <ClInclude Include="Headers\Player.h" />

@@ -2,6 +2,7 @@
 #include "Headers/Parameters.h"
 #include <cstdlib>
 #include <algorithm>
+#include <vector>
 
 namespace PacMan
 {
@@ -12,6 +13,7 @@ namespace PacMan
             static_cast<float>(std::rand()) / RAND_MAX * screen_height
         };
     }
+    
     
     sf::Vector2f Math::PlaceObject(const std::vector<sf::Vector2f>& existing, Parameters& _game)
     {
@@ -80,5 +82,6 @@ namespace PacMan
         sprite.setOrigin(sprite.getTexture()->getSize().x/2.f, sprite.getTexture()->getSize().y/2.f);
     }
 
+    
 }
 

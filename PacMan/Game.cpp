@@ -1,4 +1,5 @@
 ﻿#include "Headers/Game.h"
+#include "Headers/Leaderboard.h"
 #include <iostream>
 
 namespace PacMan
@@ -34,9 +35,9 @@ namespace PacMan
 
         if (event.key.code == sf::Keyboard::Escape && game.isGameFinished)
         {
-            game.state         = STATE_MENU;
+            game.state = STATE_MENU;
             game.isGameFinished= false;
-            game.isGameWin     = false;
+            game.isGameWin = false;
         }
     }
 
@@ -49,10 +50,10 @@ namespace PacMan
         std::cerr << "error текстуры\n";
         window.close();
         return;
+        
     }
     // Инициализация звуков
     game.sounds.InitSounds(game.parameters);
-
     // Настройка фона
     game.background.setSize({
         static_cast<float>(game.parameters.SCREEN_WIDTH),
@@ -118,6 +119,14 @@ namespace PacMan
     game.isGameWin = false;
     game.occupiedPositions.clear();
     game.player.direction = {0, 0};
+        
+    if (game.playersScoreData.empty())
+    {
+        game.playersScoreData = GenerateFakeScores(5);
+        game.playersScoreData.push_back({ "Player", 0 });
+        SortDescending(game.playersScoreData);
+    }
+
 
     // Количество яблок и условие победы
     game.applesCount = 10 + std::rand() % 50;
@@ -158,7 +167,26 @@ namespace PacMan
 
 
     void RestartGame(Game& game, sf::RenderWindow& window) {
-        BeginPlay(game, window);
+        if (game.isGameFinished)
+        {
+            // Обновление рекорда игрока
+            for (auto& r : game.playersScoreData) {
+                if (r.name == "Player") {
+                    if (game.applesEatenCount > r.score)
+                        r.score = game.applesEatenCount;
+                    break;
+                }
+            }
+            SortDescending(game.playersScoreData);
+            
+            auto savedScores = game.playersScoreData;
+            BeginPlay(game, window);
+            game.playersScoreData = savedScores;
+        }
+        else
+        {
+            BeginPlay(game, window);
+        }
     }
 
     void Tick(Game& game, float deltaTime, sf::RenderWindow& window) {
@@ -251,7 +279,8 @@ namespace PacMan
         if (!game.isGameFinished) {
             DrawUI(window, game, game.applesEatenCount, game.player.speed, game.parameters);
         } else if (game.isGameWin) {
-            WinUi(window, game.parameters);
+            WinUi(window,game, game.parameters);
+            
         } else {
             GameOverUi(window, game, game.parameters);
         }

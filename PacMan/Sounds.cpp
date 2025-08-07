@@ -1,5 +1,5 @@
 ﻿#include "Headers/Sounds.h"
-#include "Headers/parameters.h"
+
 namespace PacMan {
     void Sounds::InitSounds(Parameters& _parameters) {
         if (!eatBuffer.loadFromFile(_parameters.SoundsPath + "Eat.wav"))
